@@ -1,0 +1,43 @@
+#:kivy 1.0
+#:import MeshLinePlot kivy_garden.graph.MeshLinePlot
+
+<PopulationGraph>:
+    pop_graph : pop_graph
+    Graph:
+        id: pop_graph
+        plot: MeshLinePlot
+        xlabel:'Time'
+        ylabel:'Population'
+        x_ticks_minor:5
+        x_tics_major:25
+        y_ticks_major:100
+        y_grid_label:True
+        x_grid_label:True
+        padding:5
+        x_grid:True
+        y_grid:True
+        xmin:-0
+        xmax:100
+        ymin:-1
+        ymax:1000
+
+<PeopleMovedGraph>:
+    mov_graph : mov_graph
+    Graph:
+        id: mov_graph
+        plot: MeshLinePlot
+        xlabel:'Time'
+        ylabel:'Total People Moved'
+        x_ticks_minor:5
+        x_tics_major:25
+        y_ticks_major:100
+        y_grid_label:True
+        x_grid_label:True
+        padding:5
+        x_grid:True
+        y_grid:True
+        xmin:-0
+        xmax:100
+        ymin:-1
+        ymax:2000
+
