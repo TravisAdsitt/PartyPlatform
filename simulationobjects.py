@@ -68,6 +68,8 @@ class Person:
 
         return bool(happinness < self.move_threshold)
 
+
+
 class Town:
     def __init__(self, town_pop_max: int, town_pop_min: int = 0, platform_width: int = 32):
         self.population = random.randint(town_pop_min, town_pop_max)
